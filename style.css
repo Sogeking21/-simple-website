@@ -35,8 +35,13 @@ nav > a{
     font-size: 28px;
     font-family: Pacifico, serif;
 }
+nav > a:hover{
+    color: black;
+    transition: 0.4s ease-in;
+}
 nav ul{
     list-style: nome;
+    text-decoration: nome;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -49,11 +54,27 @@ nav ul li{
 }
 nav ul li a{
     display: inline-block;
-    padding:  10px 0;
-    width: 100%;
-    text-decoration: nome;
-    color: #f1f1f1;
+    background:#8f2faf;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+    border-width: 5px;
+    border-style: solid;
+    border-top-color:#cb99d8;
+    border-right-color:#5e2471;
+    border-bottom-color:#311839;
+    border-left-color:#a455bd;
 }
+nav ul li a:hover{
+    background:#8f2faf;
+    color: black;
+    font-weight: bold;
+    border-color: #8f2faf;
+    transition: color 1s;
+    transition: border 0.25s ease-in;
+    
+}
+
 
 /*
 Cabeçalho
@@ -75,6 +96,12 @@ header{
 header p{
     margin-bottom: 2em;
 }
+header a{
+    text-decoration: none;
+}
+header a:hover{
+    color: black;
+}
 /*
 Sobre
 */
@@ -92,9 +119,14 @@ Sobre
     margin-bottom: 2.5em;
     max-width: 1000px; 
 }
+
 #sobre .botao{
-    background-color: #f1f1f1;
-    color: #4d4d4d;
+    text-decoration: none;
+    background-color: #FFF;
+    color: #8f2faf;
+}
+#sobre .botao:hover{
+    color: black;
 }
 /*
 Serviços
